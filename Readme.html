@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Readme – ACB Systems website</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 2rem; }
+    code, pre { background: #f6f8fa; border-radius: 6px; padding: 0.2rem 0.4rem; }
+    h1, h2 { line-height: 1.25; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0; }
+    ul { margin-left: 1.25rem; }
+    a { color: #0b69c7; }
+  </style>
+</head>
+<body>
+  <h1>ACB Systems – Website Readme</h1>
+  <p><strong>Built:</strong> 08 Oct 2025, 13:32:49 (local)</p>
+
+  <div class="card">
+    <h2>Files included</h2>
+    <ul>
+      <li><code>index.html</code> – Home</li>
+      <li><code>about.html</code> – About Us</li>
+      <li><code>services.html</code> – Services</li>
+      <li><code>contact.html</code> – Contact</li>
+      <li><code>styles.css</code> – Shared stylesheet</li>
+      <li><code>script.js</code> – Small navigation + active link script</li>
+      <li><code>ICTWEB452 - LLA2 .RamandeepKaur Task1.docx</code> – Task 1 (page structure)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>How to ensure CSS works on Google (GitHub Pages or any static host)</h2>
+    <ol>
+      <li>Upload <em>all</em> files to the same folder (root). The HTML pages already reference the CSS via
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</li>
+      <li>Make sure filenames are exactly these (case‑sensitive on most hosts): <code>styles.css</code>, <code>script.js</code>,
+        and the four <code>.html</code> pages.</li>
+      <li>Do not place files inside subfolders unless you also update the paths in the HTML.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Quick local test</h2>
+    <ol>
+      <li>Open this folder in VS Code.</li>
+      <li>Use an extension like “Live Server” or run a simple server: <br>
+        <code>python -m http.server 5500</code> then visit <code>http://127.0.0.1:5500/index.html</code></li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Links between pages</h2>
+    <p>The navigation in each page links to the others using relative links, so they work locally and when hosted:</p>
+    <pre>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+  </div>
+
+  <p>— Readme generated automatically.</p>
+
+  <div class="card">
+    <h2>Why CSS may not show when opened via Google Drive/Docs preview</h2>
+    <p>Opening <code>.html</code> files directly in Google Drive/Docs uses a preview sandbox that
+    often blocks loading sibling files like <code>styles.css</code>. This is a platform limitation,
+    not an issue with your code. To see your CSS, use one of these options:</p>
+    <ul>
+      <li>Host the folder on a static host (e.g., GitHub Pages, Netlify, Vercel).</li>
+      <li>Use Google <em>Sites</em> (rebuild pages in Sites) rather than Drive preview.</li>
+      <li>Run a local server: <code>python -m http.server 5500</code> and open
+      <code>http://127.0.0.1:5500/index.html</code>.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
